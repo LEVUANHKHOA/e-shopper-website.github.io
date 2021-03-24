@@ -15,6 +15,8 @@
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.4.5/css/swiper.min.css">
       <!-- Main Style -->
       <link rel="stylesheet" href="css/style.css">
+      <!---font awesome--->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
    </head>
    <body>
       <div class="alive-container">
@@ -68,21 +70,39 @@
             </div>
             <div class="nav-sp sp">
                <div class="nav-sp-box">
-                  <hamburger-menu mobile-media-width="99999" style="--size: 32px;">
-                     <!-- Icon slot -->
-                     <svg slot="icon" viewBox="0 0 57.04 23.76">
-                        <line x1="2.13" y1="2.13" x2="54.91" y2="2.13" fill="none" stroke="#FFF" stroke-linecap="round"
-                           stroke-miterlimit="10" stroke-width="4.25" />
-                        <line x1="2.13" y1="21.64" x2="54.91" y2="21.64" fill="none" stroke="#FFF" stroke-linecap="round"
-                           stroke-miterlimit="10" stroke-width="4.25" />
-                     </svg>
-                     <!-- Menu items slot (default) -->
-                     <a>Lorem Ipsum</a>
-                     <a>Dolor Sit</a>
-                     <a>Amet Consectetur</a>
-                     <a>Adipisicing</a>
-                     <a>Reiciendis Ipsum</a>
-                  </hamburger-menu>
+                  
+	<link href='https://fonts.googleapis.com/css?family=Open Sans:400,700' rel='stylesheet' type='text/css'>
+		    <p id="view-code"></p>
+        <div class="screen">
+        	<div class="navbar"></div>
+        	
+        
+	        <div class="menu-bg"></div>
+			<div class="menu">				
+                <ul class="menu-splitL">
+					<li><a href="">Services</a></li>
+					<li><a href="">Agency</a></li>
+					<li><a href="">Work</a></li>
+                    <li><a href="">Contact</a></li>
+                    <li><a href="">News</a></li>
+				</ul>
+                <ul class="menu-splitR">
+					<li><a href="">Services</a></li>
+					<li><a href="">Agency</a></li>
+					<li><a href="">Work</a></li>
+                    <li><a href="">Contact</a></li>
+                    <li><a href="">News</a></li>
+				</ul>
+			</div>			            
+			<div class="burger">
+				
+				<div class="x"></div>
+				<div class="y"></div>
+                <div class="z"></div>
+			</div>    
+
+		</div>	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
                </div>
             </div>
          </header>
@@ -117,10 +137,10 @@
                <!----------------------------------
                   work start
                   ------------------------------------>
-               <section class="work text-container pc">
+               <section class="work text-container">
                   <h2>LATEST WORKS</h2>
                   <p>WE BRING THIS SPECIAL IDEA</p>
-                  <ul>
+                  <ul class="pc">
                      <li><a class="active" href="#">Branding</a></li>
                      <li><a href="#">Creative Marketing</a></li>
                      <li><a href="#">Social Media</a></li>
@@ -129,7 +149,7 @@
                   <!----------------------------------
                      slider start
                      ------------------------------------>
-                  <section class="slider-box">
+                  <section class="slider-box pc">
                      <!-- Swiper -->
                      <div class="swiper-container">
                         <div class="swiper-wrapper">
@@ -193,6 +213,64 @@
                         <div class="swiper-button-prev"></div>
                      </div>
                   </section>
+                  <section class="work-dropdown-sp sp">
+                  	<!----------------------------------
+                     dropdown sp
+                     ------------------------------------>
+
+                  	<div class="dropdown-container">
+					  <label for="openDropdown" class="dropdown">
+					    Branding
+					    <i class="fas fa-angle-down"></i>
+					  </label>
+					  
+					  <input type="checkbox" id="openDropdown" hidden>
+
+					  <div class="dropdown-menu">
+					    <span>Creative Marketing</span>
+					    <span>Social MEdia</span>
+					    <span>Web Development</span>
+					  </div>
+					</div>
+
+					<!----------------------------------
+                     work sp
+                     ------------------------------------>
+                     <div class="work-category-sp">
+                     	<div class="container">
+                     		<div class="work-category work-category-1">
+	                     		<a href="#">
+	                     			<img src="img/sp/work-sp-1.jpg" alt="work-sp">
+	                     			<p class="work-category-text__1">KEY VISUAL</p>
+	                     			<p class="work-category-text__2">LATS WRKS</p>
+	                     		</a>
+                     		</div>
+	                     	<div class="work-category work-category-2">
+	                     		<a href="#">
+	                     			<img src="img/sp/work-sp-2.jpg" alt="work-sp">
+	                     			<p class="work-category-text__1">CAMPAIGNS</p>
+	                     			<p class="work-category-text__2">LSWAT</p>
+	                     		</a>
+	                     	</div>
+                     	</div>
+                     	<div class="container">
+                     		<div class="work-category work-category-1">
+	                     		<a href="#">
+	                     			<img src="img/sp/work-sp-3.jpg" alt="work-sp">
+	                     			<p class="work-category-text__1">RESEARCH</p>
+	                     			<p class="work-category-text__2">WRKS</p>
+	                     		</a>
+                     		</div>
+	   `                  	<div class="work-category work-category-2">
+	                     		<a href="#">
+	                     			<img src="img/sp/work-sp-4.jpg" alt="work-sp">
+	                     			<p class="work-category-text__1">PUBLIC RELATIONS</p>
+	                     			<p class="work-category-text__2">L.A.T</p>
+	                     		</a>
+	                     	</div>
+                     	</div>
+                     </div>
+                  </section>
                   <div class="view-all-box">
                      <a href="#"><button class="btn-grad btn-view-all">View all</button></a> 
                   </div>
@@ -206,10 +284,10 @@
                <!----------------------------------
                   new box start
                   ------------------------------------>
-               <section class="new-box text-container pc">
+               <section class="new-box text-container">
                   <h2>NEWS</h2>
                   <p>STAY UPDATED ON OUR DAILY ROUTINE</p>
-                  <main>
+                  <main class="new-box-pc">
                      <div class="new-main new-main1">
                         <div class="row">
                            <img src="img/pc/new1.jpg" alt="new">
@@ -232,25 +310,32 @@
                         </div>
                      </div>
                   </main>
-                  <main class="main-news-container">
+                  <main class="new-box-sp main-news-container">
                      <div class="new-main new-main1">
                         <div class="row">
-                           <img src="img/pc/new1.jpg" alt="new">
-                           <img src="img/pc/new2.jpg" alt="new">
+                        	<a href="#">
+                           		<img src="img/sp/new-sp-1.jpg" alt="new">
+                        	</a>
+                        	<a href="#">
+                        		<img src="img/sp/new-sp-2.jpg" alt="new">
+                        	</a>
                         </div>
                         <div class="row">
-                           <img src="img/pc/new3.jpg" alt="new">
+                        	<a href="#">
+                        		<img src="img/sp/new-sp-3.jpg" alt="new">
+                        	</a>
                         </div>
                      </div>
                      <div class="new-main new-main2">
                         <div class="row">
-                           <img src="img/pc/new4.jpg" alt="">
-                           <img src="img/pc/new5.jpg" alt="">
+                        	<a href="#">
+                        		<img src="img/sp/new-sp-4.jpg" alt="new">
+                        	</a>
                         </div>
                      </div>
                   </main>
                   <div class="new-btn">
-                     <a href="#"><button class="btn-grad btn-view-all">READ ALL </button></a> 
+                     <a href="#"><button class="btn-grad btn-grad-sp btn-view-all">READ ALL </button></a> 
                   </div>
                </section>
                <!----------------------------------
@@ -259,10 +344,10 @@
                <!----------------------------------
                   new box start
                   ------------------------------------>
-               <section class="blog-box text-container pc">
+               <section class="blog-box text-container">
                   <h2>OUR BLOG</h2>
                   <p>LET’S TELL THE STORIES THAT MATTER</p>
-                  <main>
+                  <main class="blog-box-pc">
                      <div class="blog-main blog-main1">
                         <img src="img/pc/blog1.jpg" alt="blog">
                         <p class="blog-text1">Playground</p>
@@ -292,7 +377,41 @@
                         <a class="blog-btn" href="#">READ MORE →</a>
                      </div>
                   </main>
-                  <div class="new-btn">
+                  <main class="blog-box-sp">
+                     <div class="row">
+                     	<div class="blog-main blog-main1">
+	                        <img src="img/sp/blog-sp-1.jpg" alt="blog">
+	                        <p class="blog-text1">Playground</p>
+	                        <p class="blog-text2">Privacy is Power</p>
+	                        <p class="blog-text3">Quisque ut augue in sapien mollis pretium a at dui. Quisque ut</p>
+	                        <a class="blog-btn" href="#">READ MORE →</a>
+	                     </div>
+	                     <div class="blog-main blog-main2">
+	                        <img src="img/sp/blog-sp-2.jpg" alt="blog">
+	                        <p class="blog-text1">Collective</p>
+	                        <p class="blog-text2">App Concept</p>
+	                        <p class="blog-text3">Quisque ut augue in sapien mollis pretium a at dui. Quisque ut</p>
+	                        <a class="blog-btn" href="#">READ MORE →</a>
+	                     </div>
+                     </div>
+                     <div class="row">
+                     	<div class="blog-main blog-main3">
+	                        <img src="img/sp/blog-sp-3.jpg" alt="blog">
+	                        <p class="blog-text1">Tutorial</p>
+	                        <p class="blog-text2">Open Source Guides</p>
+	                        <p class="blog-text3">Quisque ut augue in sapien mollis pretium a at dui. Quisque ut</p>
+	                        <a class="blog-btn" href="#">READ MORE →</a>
+	                     </div>
+	                     <div class="blog-main blog-main4">
+	                        <img src="img/sp/blog-sp-4.jpg" alt="blog">
+	                        <p class="blog-text1">Tutorial</p>
+	                        <p class="blog-text2">Design Templates</p>
+	                        <p class="blog-text3">Quisque ut augue in sapien mollis pretium a at dui. Quisque ut</p>
+	                        <a class="blog-btn" href="#">READ MORE →</a>
+	                     </div>
+                     </div>
+                  </main>
+                  <div class="new-btn blog-btn-all">
                      <a href="#"><button class="btn-grad btn-view-all">VIEW ALL </button></a> 
                   </div>
                </section>
@@ -302,12 +421,20 @@
                <!----------------------------------
                   work together start
                   ------------------------------------>
-               <section class="work-together-box banner-box pc">
+               <section class="work-together-box banner-box">
                   <!----------------------------------
                      banner start
                      ------------------------------------>
-                  <div class="work-together banner">
+                  <div class="work-together banner pc">
                      <img src="img/pc/banner-2.jpg" alt="banner">
+                     <h2>LET’S WORK TOGETHER.</h2>
+                     <a href="#"><button class="btn-grad">WE ARE HIRING </button></a>       
+                  </div>
+
+                  <div class="work-together banner sp">
+                     <div class="img">
+                     	<img src="img/sp/banner-second-sp.jpg" alt="banner">
+                     </div>
                      <h2>LET’S WORK TOGETHER.</h2>
                      <a href="#"><button class="btn-grad">WE ARE HIRING </button></a>       
                   </div>
@@ -326,18 +453,32 @@
          <!----------------------------------
             footer start
             ------------------------------------>
-         <footer class="footer pc">
+         <footer class="footer">
             <div class="container">
                <div class="inner_footer">
                   <div class="logo_container">
-                     <img src="img/pc/footer-logo.png" alt="logo">
+                  	<img class="pc" src="img/pc/footer-logo.png" alt="logo">
+                    <div class="img logo_container-sp">
+                    	<img class="sp" src="img/sp/footer-sp.png" alt="logo">
+                    </div>
                   </div>
-                  <div class="footer_third">
+                  <div class="footer_third footer_third-pc">
                      <div class="new-btn">
                         <a href="#"><button class="btn-grad btn-view-all">GET IN TOUCH </button></a> 
                      </div>
                      <a class="facebook-icon" href="#"><img src="img/pc/facebook.png" alt="facebook icon"></a>
                      <a class="instagram-icon" href="#"><img src="img/pc/instagram.png" alt="instagram icon"></a>
+                  </div>
+                  <div class="footer_special">
+                  	<div class="footer_third footer_third-sp">
+	                     <div class="new-btn">
+	                        <a href="#"><button class="btn-grad btn-view-all">GET IN TOUCH </button></a> 
+	                     </div>
+	                     <div class="footer_third-box">
+	                     	<a class="icon-item facebook-icon" href="#"><img src="img/sp/facebook-sp.png" alt="facebook icon"></a>
+	                     	<a class="icon-item instagram-icon" href="#"><img src="img/sp/instagram-sp.png" alt="instagram icon"></a>
+	                     </div>
+	                </div>
                   </div>
                </div>
                <div class="last__footer">
@@ -350,7 +491,6 @@
                         <li><a href="#">OUR WORKS</i></a></li>
                         <li><a href="#">WHO WE ARE</a></li>
                         <li><a href="#">GET IN TOUCH</a></li>
-                        <li><a href="#">SITEMAP</a></li>
                      </ul>
                   </div>
                </div>
